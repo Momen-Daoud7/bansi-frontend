@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FiUpload, FiX, FiSettings, FiPlay } from 'react-icons/fi';
 import { invoiceApi } from '../../api/api';
 import { useNavigate } from 'react-router-dom';
+import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
 
 interface UploadedFile {
   file: File;
@@ -111,6 +112,7 @@ const Upload: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
+      <Breadcrumb pageName="Upload" />
       <div className="border-2 border-dashed border-emerald-500 rounded-lg p-8 bg-emerald-50 text-center">
         <div className="flex flex-col items-center gap-4">
           <FiUpload className="w-12 h-12 text-emerald-500" />
