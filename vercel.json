@@ -1,8 +1,12 @@
 {
     "routes": [
         {
-            "src": "/auth/(.*)",
-            "dest": "/src/pages/Authentication/$1.tsx"
+            "src": "/auth/signin",
+            "dest": "/src/pages/Authentication/SignIn.tsx"
+        },
+        {
+            "src": "/auth/signup",
+            "dest": "/src/pages/Authentication/SignUp.tsx"
         },
         {
             "src": "/upload",
