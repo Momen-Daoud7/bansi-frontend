@@ -3,7 +3,8 @@ import axios from 'axios';
 const api = axios.create({
   baseURL: 'https://bansi.momendaoud.com/api',
   headers: {
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': 'https://bansi.momendaoud.com'
   }
 });
 
