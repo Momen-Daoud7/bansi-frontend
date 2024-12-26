@@ -207,14 +207,14 @@ const Invoices: React.FC = () => {
     return (
         <div className="max-w-4xl mx-auto p-4">
             <Breadcrumb pageName="Invoices" />
-            <input 
+            {/* <input 
                 type="file" 
                 onChange={processFiles} 
                 accept=".pdf"
                 multiple
                 className="mb-4 p-2 border border-gray-300 rounded"
                 disabled={isProcessing}
-            />
+            /> */}
             {isProcessing && <p className="text-blue-500 mb-4">Processing files... Please wait.</p>}
             <TableThree invoices={invoices} />
             {!isProcessing && showValidationModal && processedInvoices.length > 0 && (
