@@ -1,8 +1,52 @@
 {
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.html"
-    }
-  ]
+    "routes": [
+        {
+            "src": "/auth/(.*)",
+            "dest": "/src/pages/Authentication/$1.tsx"
+        },
+        {
+            "src": "/upload",
+            "dest": "/src/pages/Upload/Upload.tsx"
+        },
+        {
+            "src": "/review",
+            "dest": "/src/pages/InvoiceReview.tsx"
+        },
+        {
+            "src": "/invoices",
+            "dest": "/src/pages/Invoices/Invoices.tsx"
+        },
+        {
+            "src": "/calendar",
+            "dest": "/src/pages/Calendar.tsx"
+        },
+        {
+            "src": "/profile",
+            "dest": "/src/pages/Profile.tsx"
+        },
+        {
+            "src": "/forms/(.*)",
+            "dest": "/src/pages/Form/$1.tsx"
+        },
+        {
+            "src": "/tables",
+            "dest": "/src/pages/Tables.tsx"
+        },
+        {
+            "src": "/settings",
+            "dest": "/src/pages/Settings.tsx"
+        },
+        {
+            "src": "/chart",
+            "dest": "/src/pages/Chart.tsx"
+        },
+        {
+            "src": "/ui/(.*)",
+            "dest": "/src/pages/UiElements/$1.tsx"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/src/pages/404.tsx"
+        }
+    ]
 }
