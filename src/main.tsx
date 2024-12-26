@@ -4,7 +4,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import './css/style.css';
 import './css/satoshi.css';
+<<<<<<< HEAD
 import 'jsvectormap/dist/jsvectormap.css';
+=======
+import 'jsvectormap/dist/css/jsvectormap.css';
+>>>>>>> ca52b094228e834ed59af7872a809e7088b8502d
 import 'flatpickr/dist/flatpickr.min.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
